@@ -56,6 +56,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V2-ndk.so')
         .replace_needed('libalsautils.so', 'libalsautils-v34.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v35.so')
         .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
         .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
 
@@ -80,6 +81,11 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so',
      'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V6-ndk.so'): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+
+    ('vendor/lib64/hw/mt6897/vendor.mediatek.hardware.pq_aidl-impl.so',
+     'vendor/lib64/mt6897/libmmlpqImpl.so'
+     'vendor/lib64/libpqxmlparser.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v35.so'),
 
     'vendor/lib64/mt6897/libmtkcam_hal_aidl_common.so': blob_fixup()
         .replace_needed('android.hardware.camera.common-V2-ndk.so', 'android.hardware.camera.common-V1-ndk.so'),
