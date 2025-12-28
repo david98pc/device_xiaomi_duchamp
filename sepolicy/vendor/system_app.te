@@ -1,2 +1,6 @@
 # Thermal
 rw_dir_file(system_app, sysfs_therm)
+
+# Tile
+allow system_app sysfs_therm:file { write };
+allow system_app sysfs_therm:file { getattr open read };
