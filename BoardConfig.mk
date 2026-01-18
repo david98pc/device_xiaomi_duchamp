@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+SELINUX_IGNORE_NEVERALLOWS := true
 BUILD_BROKEN_DUP_RULES := true
 
 KERNEL_PATH := $(DEVICE_PATH)-kernel
