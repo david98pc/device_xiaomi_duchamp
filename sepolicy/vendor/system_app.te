@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # Core Control
 allow system_app vendor_sysfs_corecontrol:dir search;
 allow system_app vendor_sysfs_corecontrol:file { getattr open read write };
-=======
+
 # DisplayFeature
 hal_client_domain(system_app, vendor_hal_displayfeature)
 binder_call(system_app, vendor_hal_displayfeature)

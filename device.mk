@@ -189,7 +189,6 @@ PRODUCT_PACKAGES += \
    SettingsResOverlayDuchamp \
    SystemUIOverlayDuchamp \
    TelephonyResOverlayDuchamp \
-   TetheringResOverlayDuchamp \
    WifiOverlay
 
 PRODUCT_PACKAGES += \
