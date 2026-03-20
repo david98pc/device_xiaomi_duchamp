@@ -2,8 +2,16 @@
 genfscon sysfs /class/smartpa/re25_calib u:object_r:sysfs_re25_calib:s0
 genfscon sysfs /devices/platform/11d00000.i2c/i2c-0/0-005a/f0_value u:object_r:sysfs_f0_value:s0
 
+
 # Core Control
-genfscon sysfs /devices/system/cpu/cpu[0-7]/online   u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu0/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu1/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu2/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu3/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu4/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu5/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu6/online u:object_r:vendor_sysfs_corecontrol:s0
+genfscon sysfs /devices/system/cpu/cpu7/online u:object_r:vendor_sysfs_corecontrol:s0
 
 # Display
 genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/brightness_clone                   u:object_r:vendor_displayfeature_sysfs:s0
