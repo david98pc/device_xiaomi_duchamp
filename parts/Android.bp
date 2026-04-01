@@ -12,7 +12,7 @@ android_app {
         "src/**/*.kt",
         "src/**/*.java"
     ],
-    resource_dirs: ["res"],
+    srcs: ["src/**/*.kt"],
     platform_apis: true,
     privileged: true,
     system_ext_specific: true,

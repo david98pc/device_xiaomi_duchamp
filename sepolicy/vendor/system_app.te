@@ -7,9 +7,6 @@ allow system_app vendor_sysfs_corecontrol:file rw_file_perms;
 hal_client_domain(system_app, vendor_hal_displayfeature)
 binder_call(system_app, vendor_hal_displayfeature)
 
-# Thermal
-rw_dir_file(system_app, sysfs_therm)
-
 # Tile
 allow system_app sysfs_therm:file { write };
 allow system_app sysfs_therm:file { getattr open read };
@@ -20,3 +17,4 @@ allow system_app sysfs_power_supply:dir search;
 allow system_app sysfs_power_supply:file { write setattr };
 allow system_app self:netlink_kobject_uevent_socket { bind create read setopt };
 allow system_app sysfs_power_supply:file { write setattr };
+
