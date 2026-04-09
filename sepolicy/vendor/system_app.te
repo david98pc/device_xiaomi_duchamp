@@ -1,4 +1,4 @@
-# Core Control
+#Core Control
 allow system_app vendor_sysfs_corecontrol:dir search;
 allow system_app vendor_sysfs_corecontrol:file { getattr open read write };
 allow system_app vendor_sysfs_corecontrol:file rw_file_perms;
@@ -6,10 +6,6 @@ allow system_app vendor_sysfs_corecontrol:file rw_file_perms;
 # DisplayFeature
 hal_client_domain(system_app, vendor_hal_displayfeature)
 binder_call(system_app, vendor_hal_displayfeature)
-
-# Tile
-allow system_app sysfs_therm:file { write };
-allow system_app sysfs_therm:file { getattr open read };
 
 # Turbo Charge
 allow system_app sysfs_power_supply:file rw_file_perms;

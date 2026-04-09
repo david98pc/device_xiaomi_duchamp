@@ -18,14 +18,6 @@
 
     <!-- Xiaomi Parts -->
     <string name="app_name">Xiaomi Parts</string>
-    
-    <!-- Thermal Profile -->
-    <string name="thermalprofile_title">Thermal profile</string>
-    <string name="thermalprofile_default">Default</string>
-    <string name="thermalprofile_performance">Performance</string>
-    <string name="thermalprofile_battery">Battery Saver</string>
-    <string name="thermalprofile_game">Game</string>
-    <string name="thermalprofile_unknown">Unknown</string>
 
     <!-- Turbo Charging -->
     <string name="turbo_charge_title">Turbo Charging</string>
@@ -50,4 +42,5 @@
     <string name="core_5">Core 5 (Big)</string>
     <string name="core_6">Core 6 (Big)</string>
     <string name="core_7">Core 7 (Big)</string>
+
 </resources>

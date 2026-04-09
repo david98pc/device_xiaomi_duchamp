@@ -29,23 +29,17 @@
             android:exported="false">
         </service>
 
-        <service
-            android:name=".thermal.ThermalProfileTileService"
-            android:icon="@drawable/ic_thermal_tile"
-            android:label="@string/thermalprofile_title"
-            android:exported="true"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
         <!-- Turbo Charging -->
         <activity
             android:name=".turbocharging.TurboChargingActivity"
             android:exported="false"
             android:label="@string/turbo_charge_title"
             android:theme="@style/Theme.SubSettingsBase">
+        <activity
+            android:name=".thermal.ThermalSettingsActivity"
+            android:label="@string/thermal_title"
+            android:theme="@style/Theme.SubSettingsBase.Thermal"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -84,5 +78,7 @@
         android:name="com.android.settings.summary"
         android:resource="@string/core_control_summary" />
        </activity>        
+                android:resource="@string/thermal_summary" />
+        </activity>
     </application>
 </manifest>
