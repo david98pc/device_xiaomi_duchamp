@@ -366,10 +366,6 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service.mediatek
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
 
-# Set thermal profile to 'Default' on boot
-on post-fs-data
-    write /sys/class/thermal/thermal_message/sconfig 0
-
 # Hide Magisk
 on property:sys.boot_completed=1
     # Restrict permissions to socket file
