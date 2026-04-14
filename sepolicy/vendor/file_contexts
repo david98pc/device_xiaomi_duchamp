@@ -114,7 +114,3 @@
 
 # Vibrator
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service                                u:object_r:hal_vibrator_default_exec:s0
-
-
-# Process and system statistics files
-/proc/stat                                                                                                                                                u:object_r:proc_stat:s0
