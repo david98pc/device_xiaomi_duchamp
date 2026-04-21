@@ -14,4 +14,3 @@ echo "Fixup! Audiotrack"
 cd hardware/lineage/compat
 git fetch https://github.com/LineageOS/android_hardware_lineage_compat refs/changes/04/447604/1 && git cherry-pick FETCH_HEAD
 cd ../../..
-git clone -b lineage-22.2 https://github.com/Adarsh0127-Elite/device_xiaomi_duchamp-miuicamera.git device/xiaomi/duchamp-miuicamera && git clone -b lineage-22.2 https://gitlab.com/Adarsh0127-Elite/proprietary_vendor_xiaomi_duchamp-miuicamera.git vendor/xiaomi/duchamp-miuicamera
