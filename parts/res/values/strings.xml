@@ -77,7 +77,6 @@
     <string name="turbo_charge_summary">Configure fast charging behavior and speed limits</string>
     <string name="turbo_enable_title">Enable Turbo Charge</string>
     <string name="turbo_charge_current_pref_title">Charging Mode</string>
-    <string name="core_7">Core 7 (Big)</string>
 
     <!-- GameBar Overlay -->
     <string name="game_bar_title">GameBar</string>
